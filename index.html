@@ -11,8 +11,9 @@
 	<!--fontawesome kit-->
 	<script src="https://kit.fontawesome.com/1022f50e89.js" crossorigin="anonymous"></script>
 </head>
-<body class="container">
-	<header>
+<body>
+	<!--header section-->
+	<header class="container">
 		<nav class="navbar navbar-expand-lg mt-4">
 			<div class="container-fluid">
 				<a class="navbar-brand" href="#">Bikers Zone</a>
@@ -100,7 +101,8 @@
 		</div>
 	</header>
 	
-	<main>
+	<!--main section-->
+	<main class="container">
 		<!--featured bikes section-->
 		<section class="text-start text-md-center mt-5">
 			<h1>Featured Bikes In This Year</h1>
@@ -119,7 +121,7 @@
 			</div>
 		</section>
 		
-		<!--new arrival-->
+		<!--new arrivals section-->
 		<section class="mt-5 bg-info bg-opacity-25 rounded p-5">
 			<h1 class="text-center">New Arrival</h1>
 			
@@ -163,7 +165,7 @@
 			</div>
 		</section>
 		
-		<!--happy clients-->
+		<!--happy clients section-->
 		<section class="mt-5">
 			<h1 class="text-center py-5">Happy <span class="text-danger">Clients</span></h1>
 			
@@ -221,10 +223,104 @@
 				</div>
 			</div>
 		</section>
+		
+		<!--FAQ Section-->
+		<section class="mt-5 pb-5 bg-secondary-subtle rounded">
+			<h1 class="text-center py-5">Frequently Asked
+				<span  class="text-danger">Questions</span></h1>
+			
+			<div class="row row-cols-1 row-cols-md-2 mt-5 px-5 g-4">
+				<div class="col text-center">
+					<img class="w-50" src="images/faq.png" alt="">
+				</div>
+				<div class="col">
+					<div class="accordion" id="accordionExample">
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="headingOne">
+								<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+									Accordion Item #1
+								</button>
+							</h2>
+							<div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+								<div class="accordion-body">
+									<strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+								</div>
+							</div>
+						</div>
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="headingTwo">
+								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+									Accordion Item #2
+								</button>
+							</h2>
+							<div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+								<div class="accordion-body">
+									<strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+								</div>
+							</div>
+						</div>
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="headingThree">
+								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+									Accordion Item #3
+								</button>
+							</h2>
+							<div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+								<div class="accordion-body">
+									<strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 	</main>
 	
-	<footer>
-	
+	<!--footer section-->
+	<footer class="bg-black mt-5 pb-5">
+		<div class="container">
+			<div class="row row-cols-1 row-cols-md-2 d-flex justify-content-between">
+				<div class="col text-white mt-5 me-auto">
+					<ul class="text-decoration-none d-flex flex-wrap ps-0 mb-4">
+						<li class="list-unstyled me-5">
+							<a class="text-decoration-none text-white" href="#">Download Now</a>
+						</li>
+						<li class="list-unstyled">
+							<a class="text-decoration-none text-white" href="#">License</a>
+						</li>
+					</ul>
+<!--					<ul class="text-decoration-none list-group list-group-horizontal mb-4">-->
+					<ul class="text-decoration-none d-flex flex-wrap ps-0 mb-4">
+						<li class="list-unstyled me-5">
+							<a class="text-decoration-none text-white" href="#">About</a>
+						</li>
+						<li class="list-unstyled me-5">
+							<a class="text-decoration-none text-white" href="#">Features</a>
+						</li>
+						<li class="list-unstyled me-5 text-white">
+							<a class="text-decoration-none text-white" href="#">Pricing</a>
+						</li>
+						<li class="list-unstyled me-5">
+							<a class="text-decoration-none text-white" href="#">Help</a>
+						</li>
+						<li class="list-unstyled">
+							<a class="text-decoration-none text-white" href="#">Privacy Policy</a>
+						</li>
+					</ul>
+					<p>© 2023 bike. All rights reserved</p>
+				</div>
+				
+				<div class="col d-flex text-white mt-5">
+					<div class="ms-auto">
+						<h4>Get the app</h4>
+						<img class="mt-3 w-75 ms-auto rounded" src="images/android.png" alt="">
+						<br>
+						<img class="w-75 rounded mt-3" src="images/ios.png" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
 	</footer>
 	
 	<!--bootstrap js-->
