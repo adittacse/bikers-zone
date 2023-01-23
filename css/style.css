@@ -1,3 +1,7 @@
 .bikers-zone-control-prev-icon, .bikers-zone-control-next-icon {
     background-color: red;
 }
+
+.rating-icon {
+    width: 20px;
+}
